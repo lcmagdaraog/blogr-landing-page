@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Overpass", sans-serif;
+}
+
+.container .back-img {
+  height: 600px;
+  background-image: url("./images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(180deg, #ff8f70, #ff3d54);
+  background-size: 350%;
+  background-repeat: no-repeat;
+  background-position: 36% 36%;
+  border-radius: 0 0 0 100px;
+  padding: 30px 25px 0 25px;
+}
+
+.container .back-img .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.container .back-img .logo {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.container .back-img .text-container {
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 110px;
+}
+
+.container .back-img .text-container h1 {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.container .back-img .text-container h1 span {
+  display: block;
+}
+
+.container .back-img .text-container h2 {
+  padding: 15px 15px 0 15px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.container .back-img .text-container a {
+  text-decoration: none;
+}
+
+.container .back-img .text-container .btn-wrapper {
+  margin-top: 46px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container .back-img .text-container .btn-wrapper .btn {
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 47px;
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+}
+
+.container .back-img .text-container .btn-wrapper .btn-primary {
+  background-color: white;
+  color: #ff525d;
+  margin-right: 20px;
+}
+
+.container .back-img .text-container .btn-wrapper .btn-secondary {
+  color: white;
+}
+
+.design-container {
+  font-family: "Overpass", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 103px 0 65px 0;
+  color: #1f3f5b;
+  overflow: hidden;
+}
+
+.design-container h2 {
+  margin-top: 20px;
+  font-size: 1.7rem;
+}
+
+.design-container h2 span {
+  padding: 20px;
+}
+
+.design-container img {
+  margin-top: 43px;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.design-container .text-content {
+  margin-top: 37px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.design-container .text-content p {
+  line-height: 2;
+  padding: 11px;
+  font-size: 17px;
+}
+
+.editor-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editor-container .whitespace {
+  height: 230px;
+  width: 100%;
+  margin-bottom: -38px;
+  position: relative;
+}
+
+.editor-container .whitespace img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 382px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.editor-container .text-content {
+  border-radius: 0 120px 0 120px;
+  background-image: url(images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background-image: url(images/bg-pattern-circles.svg), linear-gradient(#2c2d3f, #3f4164);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 165%, 100%;
+  background-position: 50% -3500%, 0% 0%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  text-align: center;
+  height: 628px;
+  padding: 0 20px 0 20px;
+}
+
+.editor-container .text-content h2 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  padding: 240px 0 0 0;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.editor-container .text-content p {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+  color: white;
+  padding: 0px 10px 10px 10px;
+}
+
+.free-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 63px;
+  color: #1f3f5b;
+}
+
+.free-container .text-content {
+  margin-top: 37px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.free-container .text-content h2 {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.free-container .text-content p {
+  margin-top: 10px;
+  line-height: 1.7;
+  padding: 12px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  padding: 4.5px;
+}
+
+.free-container .text-content .power {
+  margin-top: 46px;
+}
+
+.blogr {
+  height: 988px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  border-radius: 0 80px 0 0;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.blogr img {
+  margin-top: 75px;
+}
+
+.blogr .footer-blogr {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.blogr .footer-blogr h2 {
+  margin-bottom: 27px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.blogr .footer-blogr a {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #c8c8cb;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 53px;
+  z-index: 999;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.nav-menu .nav-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 84%;
+}
+
+.nav-menu .nav-close .mobile-close {
+  cursor: pointer;
+}
+
+.nav-menu .menu-container {
+  background-color: white;
+  width: 84%;
+  border-radius: 10px;
+  margin-top: 47px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 20px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.nav-menu .menu-container .menu-item:hover .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-menu .menu-container .menu-item .items {
+  border-radius: 5px;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.nav-menu .menu-container .menu-item .items a {
+  text-decoration: none;
+  color: #c8c8cb;
+  padding: 15px 5px;
+}
+
+.nav-menu .menu-container .menu-item .items a:hover {
+  color: #1f3f5b;
+}
+
+.nav-menu .menu-container .menu-item h4 {
+  color: #1f3f5b;
+  font-size: 17px;
+  padding: 20px 5px;
+  cursor: pointer;
+}
+
+.nav-menu .menu-container .menu-item h4:hover {
+  color: #c8c8cb;
+}
+
+.nav-menu .menu-container .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+hr {
+  margin-top: 20px;
+  color: #c8c8cb;
+}
+
+.btn-login {
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn-login .btn {
+  text-decoration: none;
+  border-radius: 50px;
+  height: 47px;
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+}
+
+.btn-login .btn-log {
+  color: #25252d;
+  margin-bottom: 13px;
+}
+
+.btn-login .btn-signup {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(90deg, #ff8f70, #ff3d54);
+  color: white;
+}
+
+.menu-hide {
+  left: 100vw;
+  opacity: 0;
+}
+
+.mobile-open {
+  height: 20px;
+  width: 23px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.open-hide {
+  opacity: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

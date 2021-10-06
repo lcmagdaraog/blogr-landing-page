@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+// font-family: 'Overpass', sans-serif;
+$font: "Ubuntu", sans-serif;
+$font-size: 17px;
+$colors: (
+  //Primary
+  Lightred: hsl(356, 100%, 66%),
+  Very-light-hover-background: hsl(355, 100%, 74%),
+  Very-dark-headings: hsl(208, 49%, 24%),
+  //Neutral
+  White-text: hsl(0, 0%, 100%),
+  Grayish-blue-footer-text: hsl(240, 2%, 79%),
+  Very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%),
+  Very-dark-black-blue-footer-background: hsl(240, 10%, 16%),
+  //Gradient
+  //Background gradient - Intro/CTA mobile nav:
+  Very-light-red:
+    linear-gradient(180deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+    btn-color:
+    linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+  //Background gradient - body:
+  items-color: hsl(237, 23%, 32%)
+);
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$gradient-1: hsl(237, 17%, 21%);
+$gradient-2: hsl(237, 23%, 32%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Overpass", sans-serif;
+
+  .back-img {
+    height: 600px;
+    background-image: url("./images/bg-pattern-intro.svg"),
+      color(Very-light-red);
+    background-size: 350%;
+    background-repeat: no-repeat;
+    background-position: 36% 36%;
+    border-radius: 0 0 0 100px;
+    padding: 30px 25px 0 25px;
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .logo {
+      height: 2rem;
+      cursor: pointer;
+    }
+
+    .text-container {
+      color: color(White-text);
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 110px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 2.2rem;
+
+        span {
+          display: block;
+        }
+      }
+
+      h2 {
+        padding: 15px 15px 0 15px;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .btn-wrapper {
+        margin-top: 46px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Ubuntu", sans-serif;
+
+        .btn {
+          border: 1px solid white;
+          border-radius: 50px;
+          height: 47px;
+          width: 135px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+        }
+        .btn-primary {
+          background-color: color(White-text);
+          color: color(Lightred);
+          margin-right: 20px;
+        }
+        .btn-secondary {
+          color: color(White-text);
+        }
+      }
+    }
+  }
+}
+.design-container {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 103px 0 65px 0;
+  color: color(Very-dark-headings);
+  overflow: hidden;
+
+  h2 {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    span {
+      padding: 20px;
+    }
+  }
+
+  img {
+    margin-top: 43px;
+    transform: scale(1.01);
+  }
+  .text-content {
+    margin-top: 37px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+
+    p {
+      line-height: 2;
+      padding: 11px;
+      font-size: 17px;
+    }
+  }
+}
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .whitespace {
+    height: 230px;
+    width: 100%;
+    margin-bottom: -38px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 382px;
+      justify-content: center;
+      z-index: 1;
+    }
+  }
+
+  .text-content {
+    border-radius: 0 120px 0 120px;
+    background-image: url(images/bg-pattern-circles.svg),
+      linear-gradient($gradient-1, $gradient-2);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 165%, 100%;
+    background-position: 50% -3500%, 0% 0%;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    text-align: center;
+    height: 628px;
+    padding: 0 20px 0 20px;
+
+    h2 {
+      font-family: "Overpass", sans-serif;
+      font-weight: 600;
+      padding: 240px 0 0 0;
+      font-size: 2.7rem;
+      margin-bottom: 20px;
+      color: color(White-text);
+    }
+    p {
+      font-family: "Overpass", sans-serif;
+      line-height: 1.6;
+      font-size: 17px;
+      color: color(White-text);
+      padding: 0px 10px 10px 10px;
+    }
+  }
+}
+.free-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 63px;
+  color: color(Very-dark-headings);
+
+  .text-content {
+    margin-top: 37px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+
+    h2 {
+      font-size: 2rem;
+      font-family: $font;
+    }
+
+    p {
+      margin-top: 10px;
+      line-height: 1.7;
+      padding: 12px;
+      font-family: $font;
+      font-size: 17px;
+      padding: 4.5px;
+    }
+
+    .power {
+      margin-top: 46px;
+    }
+  }
+}
+
+.blogr {
+  background-color: color($gradient-2);
+  height: 988px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  border-radius: 0 80px 0 0;
+  font-family: $font;
+  color: color(White-text);
+  img {
+    margin-top: 75px;
+  }
+
+  .footer-blogr {
+    text-align: center;
+    margin-top: 75px;
+
+    h2 {
+      margin-bottom: 27px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    a {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: color(Grayish-blue-footer-text);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 53px;
+  z-index: 999;
+  transition: all .5s ease-in-out;
+
+  .nav-close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 84%;
+    .mobile-close{
+      cursor: pointer;
+    }
+  }
+  .menu-container {
+    background-color: color(White-text);
+    width: 84%;
+
+    border-radius: 10px;
+    margin-top: 47px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 20px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    .menu-item {
+      &:hover {
+        .items {
+          display: flex;
+        }
+      }
+
+      .items {
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: color(Grayish-blue-footer-text);
+          padding: 15px 5px;
+          &:hover {
+            color: color(Very-dark-headings);
+          }
+        }
+        display: none;
+      }
+      h4 {
+        color: color(Very-dark-headings);
+        font-size: 17px;
+        padding: 20px 5px;
+        cursor: pointer;
+        &:hover {
+          color: color(Grayish-blue-footer-text);
+        }
+      }
+    }
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+}
+hr{
+  margin-top: 20px;
+  color: color(Grayish-blue-footer-text);
+}
+.btn-login {
+  margin-top: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+
+  .btn {
+    text-decoration: none;
+    border-radius: 50px;
+    height: 47px;
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: 700;
+   
+    
+  }
+  .btn-log {
+    color: color(Very-dark-black-blue-footer-background);
+    margin-bottom: 13px;
+  }
+  .btn-signup {
+   background-image: color(btn-color);
+   color: color(White-text);
+  }
+}
+
+.menu-hide{
+  left: 100vw;
+  opacity: 0;
+}
+.mobile-open {
+  height: 20px;
+  width: 23px;
+  transition: all 1s ease-in-out;
+}
+.open-hide{
+  opacity: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
