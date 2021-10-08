@@ -120,6 +120,16 @@ body {
     }
   }
 }
+@media screen and (max-width:1439px) {
+  .img-desktop{
+    margin-right: -250px;
+    margin-top: 43px;
+    transform: scale(1.01);
+    display: none;
+}
+  
+}
+
 .design-container {
   font-family: "Overpass", sans-serif;
   display: flex;
@@ -129,7 +139,12 @@ body {
   margin: 103px 0 65px 0;
   color: color(Very-dark-headings);
   overflow: hidden;
-
+  .design-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     margin-top: 20px;
     font-size: 1.7rem;
@@ -138,11 +153,15 @@ body {
     }
   }
 
-  img {
+  .img-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 43px;
     transform: scale(1.01);
   }
   .text-content {
+    
     margin-top: 37px;
     text-align: center;
     padding: 0 20px 0 20px;
@@ -213,7 +232,9 @@ body {
   align-items: center;
   margin-top: 63px;
   color: color(Very-dark-headings);
-
+ .d-laptop{
+   display: none;
+ }
   .text-content {
     margin-top: 37px;
     text-align: center;
@@ -240,7 +261,7 @@ body {
 }
 
 .blogr {
-  background-color: color($gradient-2);
+  background-color: color(Very-dark-black-blue-footer-background);
   height: 988px;
   display: flex;
   flex-direction: column;
@@ -253,7 +274,51 @@ body {
     margin-top: 75px;
   }
 
-  .footer-blogr {
+  .footer-blogr1 {
+    text-align: center;
+    margin-top: 75px;
+
+    h2 {
+      margin-bottom: 27px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    a {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: color(Grayish-blue-footer-text);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  .footer-blogr2 {
+    text-align: center;
+    margin-top: 75px;
+
+    h2 {
+      margin-bottom: 27px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    a {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: color(Grayish-blue-footer-text);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  .footer-blogr3 {
     text-align: center;
     margin-top: 75px;
 
@@ -409,3 +474,4 @@ hr{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@import 'media1440';
