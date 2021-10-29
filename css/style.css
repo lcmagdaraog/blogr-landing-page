@@ -170,7 +170,7 @@ body {
 }
 
 .design-container h2 {
-  font-size: clamp(1.7rem, 5vw, 2rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
 .design-container h2 span {
@@ -329,7 +329,7 @@ body {
 }
 
 .free-container h2 {
-  font-size: clamp(1.7rem, 5vw, 2rem);
+  font-size: clamp(1.7rem, 5vw, 2.5rem);
 }
 
 .free-container h2 span {
