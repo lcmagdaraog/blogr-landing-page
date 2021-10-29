@@ -900,6 +900,9 @@ hr {
     display: -ms-flexbox;
     display: flex;
   }
+  .nav-menu .heading h4 {
+    color: white !important;
+  }
   .nav-menu .btn-login {
     margin: 0 !important;
     height: 70px;
@@ -916,6 +919,9 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .nav-menu .btn-login a {
+    color: white;
   }
   .blogr {
     display: -ms-grid;

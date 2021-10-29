@@ -123,7 +123,7 @@
     margin-top: -5em;
     height: 400px;
     background-size: 80%, cover;
-  background-position: -230px -600px, 0% 0%;
+    background-position: -230px -600px, 0% 0%;
   }
   .editor-content {
     display: grid;
@@ -151,7 +151,6 @@
     }
   }
 
-  
   .mobile-open,
   hr,
   .mobile-close {
@@ -170,14 +169,18 @@
       margin: 0 !important;
       background: transparent;
       box-shadow: none;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     height: 100px;
-
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100px;
     }
-    .menu-content{
-      
+
+    .menu-content {
       display: flex;
+    }
+    .heading {
+      h4 {
+        color: white !important;
+      }
     }
     .btn-login {
       margin: 0 !important;
@@ -188,16 +191,19 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      a {
+        color: white;
+      }
     }
   }
 
   // footer .............................
 
-  .blogr{
+  .blogr {
     display: grid;
     grid-template-columns: 200px 1fr;
     padding: 0 6em 4em 6em;
-    .content{
+    .content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
