@@ -1,11 +1,13 @@
-const btnClose  = document.querySelector('.mobile-close');
-const menu = document.querySelector('.nav-menu');
-const btnopen = document.querySelector('.mobile-open');
+const mobileOpen = document.getElementById("mobile-open");
+nav = document.querySelector("nav");
+mobileClose = document.getElementById("mobile-close");
 
-btnClose = addEventListener('click', menuHideShow);
-btnopen = addEventListener('click', menuHideShow);
+mobileOpen.addEventListener("click", () => {
+  nav.classList.add("menu");
+  mobileOpen.classList.add("hidden");
+});
 
-function menuHideShow(){
-    menu.classList.toggle('menu-hide');
-    btnopen.classList.toggle('open-hide');
-};
+mobileClose.addEventListener("click", () => {
+  nav.classList.remove("menu");
+  mobileOpen.classList.remove("hidden");
+});
